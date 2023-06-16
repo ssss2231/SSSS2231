@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>푸드링크 - 배달어플 홈페이지</title>
+    <style>
+        /* CSS 스타일 지정 */
+        .header {
+            background-color: #FF69B4;
+            color: #FFFFFF;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            color: #FFFFFF;
+            margin-right: auto;
+            font-weight: bold;
+        }
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .filter-section {
+            /* 필터 영역 스타일 지정 */
+        }
+        .sort-section {
+            /* 정렬 영역 스타일 지정 */
+        }
+        .weight-section {
+            /* 중량 영역 스타일 지정 */
+        }
+        .card-discount-section {
+            /* 카드 할인가 영역 스타일 지정 */
+        }
+        .delivery-section {
+            /* 배송 영역 스타일 지정 */
+        }
+        .sales-section {
+            /* 판매량 영역 스타일 지정 */
+        }
+        .review-section {
+            /* 상품평 영역 스타일 지정 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header class="header">
+        <h1 class="logo">푸드링크</h1>
+        <div class="user-actions">
+            <a href="login.html">로그인</a>
+            <a href="signup.html">회원가입</a>
+        </div>
+    </header>
+
+    <!-- 검색창 -->
+    <div class="search-bar">
+        <input type="text" placeholder="상품을 검색하세요">
+        <button type="submit">검색</button>
+    </div>
+
+    <!-- 필터 영역 -->
+    <section class="filter-section">
+        <h2>가격</h2>
+        <button onmouseover="showPriceFilter()">가격 높은 순</button>
+        <button onmouseover="showPriceFilter()">가격 낮은 순</button>
+    </section>
+
+    <!-- 정렬 영역 -->
+    <section class="sort-section">
+        <h2>평점</h2>
+        <button onmouseover="showRatingFilter()">5점대</button>
+        <button onmouseover="showRatingFilter()">4점대</button>
+        <button onmouseover="showRatingFilter()">3점대</button>
+        <button onmouseover="showRatingFilter()">2점대</button>
+        <button onmouseover="showRatingFilter()">1점대</button>
+    </section>
+
+ 
+<!-- 중량 영역 -->
+<section class="weight-section">
+    <h2>중량</h2>
+    <button onmouseover="showWeightFilter()">많이 나가는 순</button>
+    <button onmouseover="showWeightFilter()">적게 나가는 순</button>
+</section>
+
+<!-- 카드 할인가 영역 -->
+<section class="card-discount-section">
+    <h2>카드 할인가</h2>
+    <button onmouseover="showCardDiscountFilter()">최고 할인가</button>
+    <button onmouseover="showCardDiscountFilter()">최저 할인가</button>
+</section>
+
+<!-- 배송 영역 -->
+<section class="delivery-section">
+    <h2>배송</h2>
+    <button onmouseover="showDeliveryFilter()">빠른 배송</button>
+    <button onmouseover="showDeliveryFilter()">무료 배송</button>
+    <button onmouseover="showDeliveryFilter()">새벽 배송</button>
+</section>
+
+<!-- 판매량 영역 -->
+<section class="sales-section">
+    <h2>판매량</h2>
+    <button onmouseover="showSalesFilter()">판매량 많은 순</button>
+    <button onmouseover="showSalesFilter()">판매량 적은 순</button>
+</section>
+
+<!-- 상품평 영역 -->
+<section class="review-section">
+    <h2>상품평</h2>
+    <button onmouseover="showReviewFilter()">리뷰 좋은 순</button>
+    <button onmouseover="showReviewFilter()">리뷰 많은 순</button>
+    <button onmouseover="showReviewFilter()">리뷰 등록일 순</button>
+</section>
+
+<img src="C:\Users\SAMSUNG\Documents\콜라.jpg" alt="콜라">
+
+
